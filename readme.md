@@ -75,13 +75,28 @@ in your browser.
 
 ---
 
-## 💻 Live Demo
+## 🌐 Live Demo
 
-Add your live demo link here:
+👉 https://busgo-15336.netlify.app/
 
-```bash
-https://bus-go-15336.netlify.app/
-```
+---
+
+## 📸 Preview
+
+### 🚍 Hero Section
+<img src="./Screenshot%20(109).png" width="800" />
+
+### 🎁 Trending Offers
+<img src="./Screenshot%20(110).png" width="800" />
+
+### 🛣️ Popular Routes
+<img src="./Screenshot%20(111).png" width="800" />
+
+### ❓ FAQs
+<img src="./Screenshot%20(112).png" width="800" />
+
+### 📞 Contact Us
+<img src="./Screenshot%20(113).png" width="800" />
 
 ---
 

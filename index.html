@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>BusGo - Modern Bus Ticket Booking UI</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="#">
+        BusGo
+      </a>
+
+      <button class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav">
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav mx-auto">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#offers">
+              Offers
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#routes">
+              Routes
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">
+              FAQ
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="d-flex gap-2">
+
+          <a href="login.html"
+            class="btn btn-outline-light nav-btn">
+            Login
+          </a>
+
+          <a href="sign_up.html"
+            class="btn custom-btn">
+            Signup
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- ================= HERO SECTION ================= -->
+
+  <section class="hero-section" id="home">
+
+    <div class="hero-overlay"></div>
+  
+    <div class="container">
+  
+      <div class="hero-content text-center">
+  
+        <span class="hero-badge">
+          India's Trusted Travel Platform
+        </span>
+  
+        <h1>
+          Travel Across India
+          Comfortably & Affordably
+        </h1>
+  
+        <p>
+          Book bus tickets instantly with secure payments,
+          premium travel experience, and exciting discounts.
+        </p>
+  
+        <div class="hero-buttons justify-content-center">
+  
+          <a href="#search-section"
+            class="btn custom-btn">
+            Book Tickets
+          </a>
+  
+          <a href="#routes"
+            class="btn explore-btn">
+            Explore Routes
+          </a>
+  
+        </div>
+
+
+  
+      </div>
+  
+    </div>
+  
+  </section>
+
+  <!-- ================= SEARCH SECTION ================= -->
+
+  <section class="search-section"
+    id="search-section">
+
+    <div class="container">
+
+      <div class="search-box">
+
+        <div class="row g-4">
+
+          <div class="col-md-3">
+
+            <label class="form-label">
+              From
+            </label>
+
+            <input type="text"
+              class="form-control"
+              placeholder="Enter Departure">
+
+          </div>
+
+          <div class="col-md-3">
+
+            <label class="form-label">
+              To
+            </label>
+
+            <input type="text"
+              class="form-control"
+              placeholder="Enter Destination">
+
+          </div>
+
+          <div class="col-md-3">
+
+            <label class="form-label">
+              Travel Date
+            </label>
+
+            <input type="date"
+              class="form-control">
+
+          </div>
+
+          <div class="col-md-3 d-flex align-items-end">
+
+            <button class="btn custom-btn w-100">
+
+              Search Buses
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section> 
+
+  <!-- ================= OFFERS SECTION ================= -->
+
+  <section class="section-padding"
+    id="offers">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>
+          Trending Offers
+        </h2>
+
+        <p>
+          Save more on every journey
+        </p>
+
+      </div>
+
+      <div id="offerCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+
+          <div class="carousel-item active">
+
+            <div class="row g-4">
+
+              <div class="col-md-4">
+
+                <div class="offer-card">
+
+                  <img src="images/offer1.avif"
+                    class="img-fluid"
+                    alt="Offer">
+
+                  <div class="offer-content">
+
+                    <span class="offer-tag">
+                      Limited Time
+                    </span>
+
+                    <h4>
+                      Flat 50% OFF
+                    </h4>
+
+                    <p>
+                      Get amazing discounts on your first booking.
+                    </p>
+
+                    <button class="btn custom-btn">
+                      Grab Deal
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-md-4">
+
+                <div class="offer-card">
+
+                  <img src="images/offer2.avif"
+                    class="img-fluid"
+                    alt="Offer">
+
+                  <div class="offer-content">
+
+                    <span class="offer-tag">
+                      Premium
+                    </span>
+
+                    <h4>
+                      Luxury Bus Deals
+                    </h4>
+
+                    <p>
+                      Premium sleeper buses at affordable prices.
+                    </p>
+
+                    <button class="btn custom-btn">
+                      View Offer
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-md-4">
+
+                <div class="offer-card">
+
+                  <img src="images/offer3.avif"
+                    class="img-fluid"
+                    alt="Offer">
+
+                  <div class="offer-content">
+
+                    <span class="offer-tag">
+                      Weekend
+                    </span>
+
+                    <h4>
+                      Weekend Special
+                    </h4>
+
+                    <p>
+                      Travel with friends and save more every weekend.
+                    </p>
+
+                    <button class="btn custom-btn">
+                      Explore
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Slide 2 -->
+
+          <div class="carousel-item">
+
+            <div class="row g-4">
+
+              <div class="col-md-4">
+
+                <div class="offer-card">
+
+                  <img src="images/offer4.avif"
+                    class="img-fluid"
+                    alt="Offer">
+
+                  <div class="offer-content">
+
+                    <span class="offer-tag">
+                      Cashback
+                    </span>
+
+                    <h4>
+                      Instant Cashback
+                    </h4>
+
+                    <p>
+                      Pay online and get instant cashback rewards.
+                    </p>
+
+                    <button class="btn custom-btn">
+                      Claim Now
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-md-4">
+
+                <div class="offer-card">
+
+                  <img src="images/offer5.avif"
+                    class="img-fluid"
+                    alt="Offer">
+
+                  <div class="offer-content">
+
+                    <span class="offer-tag">
+                      Summer
+                    </span>
+
+                    <h4>
+                      Summer Escape
+                    </h4>
+
+                    <p>
+                      Enjoy comfortable long-distance travel this summer.
+                    </p>
+
+                    <button class="btn custom-btn">
+                      View Deal
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-md-4">
+
+                <div class="offer-card">
+
+                  <img src="images/offer6.avif"
+                    class="img-fluid"
+                    alt="Offer">
+
+                  <div class="offer-content">
+
+                    <span class="offer-tag">
+                      Student
+                    </span>
+
+                    <h4>
+                      Student Discounts
+                    </h4>
+
+                    <p>
+                      Save more with exclusive student travel offers.
+                    </p>
+
+                    <button class="btn custom-btn">
+                      Apply Now
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Carousel Controls -->
+
+        <button class="carousel-control-prev"
+          type="button"
+          data-bs-target="#offerCarousel"
+          data-bs-slide="prev">
+
+          <span class="carousel-control-prev-icon"></span>
+
+        </button>
+
+        <button class="carousel-control-next"
+          type="button"
+          data-bs-target="#offerCarousel"
+          data-bs-slide="next">
+
+          <span class="carousel-control-next-icon"></span>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= ROUTES SECTION ================= -->
+
+  <section class="section-padding bg-light"
+    id="routes">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>
+          Popular Routes
+        </h2>
+
+        <p>
+          Top routes preferred by travelers
+        </p>
+
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+
+          <div class="route-card">
+
+            <div class="route-top">
+
+              <span class="route-badge">
+                AC Sleeper
+              </span>
+
+              <span class="route-rating">
+                ⭐ 4.7
+              </span>
+
+            </div>
+
+            <h4>
+              Delhi → Jaipur
+            </h4>
+
+            <p>
+              WiFi • Charging Port • Recliner Seats
+            </p>
+
+            <div class="route-bottom">
+
+              <h5>
+                ₹799
+              </h5>
+
+              <button class="btn custom-btn">
+                Book Now
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+          <div class="route-card">
+
+            <div class="route-top">
+
+              <span class="route-badge">
+                Luxury Coach
+              </span>
+
+              <span class="route-rating">
+                ⭐ 4.8
+              </span>
+
+            </div>
+
+            <h4>
+              Mumbai → Pune
+            </h4>
+
+            <p>
+              Live Tracking • Water Bottle • AC
+            </p>
+
+            <div class="route-bottom">
+
+              <h5>
+                ₹599
+              </h5>
+
+              <button class="btn custom-btn">
+                Book Now
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+          <div class="route-card">
+
+            <div class="route-top">
+
+              <span class="route-badge">
+                Express
+              </span>
+
+              <span class="route-rating">
+                ⭐ 4.6
+              </span>
+
+            </div>
+
+            <h4>
+              Bhopal → Indore
+            </h4>
+
+            <p>
+              Comfortable Seats • Fast Travel
+            </p>
+
+            <div class="route-bottom">
+
+              <h5>
+                ₹499
+              </h5>
+
+              <button class="btn custom-btn">
+                Book Now
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= FAQ SECTION ================= -->
+
+  <section class="section-padding"
+    id="faq">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>
+          Frequently Asked Questions
+        </h2>
+
+        <p>
+          Quick answers for common queries
+        </p>
+
+      </div>
+
+      <div class="accordion"
+        id="faqAccordion">
+
+        <div class="accordion-item">
+
+          <h2 class="accordion-header">
+
+            <button class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq1">
+
+              How can I book bus tickets?
+
+            </button>
+
+          </h2>
+
+          <div id="faq1"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#faqAccordion">
+
+            <div class="accordion-body">
+
+              Search routes, select seats, and confirm payment securely.
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="accordion-item">
+
+          <h2 class="accordion-header">
+
+            <button class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq2">
+
+              Can I cancel my ticket?
+
+            </button>
+
+          </h2>
+
+          <div id="faq2"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faqAccordion">
+
+            <div class="accordion-body">
+
+              Yes, tickets can be cancelled before departure.
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="accordion-item">
+
+          <h2 class="accordion-header">
+
+            <button class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq3">
+
+              Are online payments secure?
+
+            </button>
+
+          </h2>
+
+          <div id="faq3"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faqAccordion">
+
+            <div class="accordion-body">
+
+              Yes, all transactions are protected with secure payment gateways.
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="accordion-item">
+
+          <h2 class="accordion-header">
+
+            <button class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq4">
+
+              Can I choose my seat?
+
+            </button>
+
+          </h2>
+
+          <div id="faq4"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faqAccordion">
+
+            <div class="accordion-body">
+
+              Yes, seat selection is available during booking.
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= CONTACT SECTION ================= -->
+
+  <section class="section-padding bg-light"
+    id="contact">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>
+          Contact Us
+        </h2>
+
+        <p>
+          We are always here to help you
+        </p>
+
+      </div>
+
+      <div class="row justify-content-center">
+
+        <div class="col-lg-8">
+
+          <div class="contact-card">
+
+            <form>
+
+              <div class="row g-4">
+
+                <div class="col-md-6">
+
+                  <input type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                    required>
+
+                </div>
+
+                <div class="col-md-6">
+
+                  <input type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    required>
+
+                </div>
+
+                <div class="col-12">
+
+                  <textarea class="form-control"
+                    rows="5"
+                    placeholder="Your Message"></textarea>
+
+                </div>
+
+                <div class="col-12">
+
+                  <button class="btn custom-btn">
+
+                    Send Message
+
+                  </button>
+
+                </div>
+
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+
+    <div class="container">
+
+      <p>
+        © 2026 BusGo. Designed by Shreyansh Kumar.
+      </p>
+
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
